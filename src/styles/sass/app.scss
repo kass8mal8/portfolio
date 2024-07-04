@@ -1,0 +1,47 @@
+@import "./variables";
+@import "./header";
+@import "./hero";
+@import "./about";
+@import "./services";
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: $poppins;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: $black;
+	color: $white;
+}
+
+.container {
+	padding: 10px 7%;
+
+	.contact {
+		flex-basis: 35%;
+		margin-top: 30px;
+		justify-content: space-between;
+
+		.social-icons {
+			color: #ababab;
+			transition: transform 0.5s;
+
+			&:hover {
+				color: $light-red;
+				transform: translateY(-5px);
+			}
+		}
+	}
+
+	.form {
+		.input {
+			display: block;
+		}
+	}
+}
